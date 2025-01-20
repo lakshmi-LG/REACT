@@ -1,0 +1,35 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "\"this is React from LG",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakshmi-LG/REACT.git"
+  },
+  "keywords": [
+    "LG",
+    "React",
+    "NR"
+  ],
+  "author": "lakshmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lakshmi-LG/REACT/issues"
+  },
+  "homepage": "https://github.com/lakshmi-LG/REACT#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "browserlist": [
+    "last 2 versions",
+    "last 5 Chrome version"
+  ],
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
