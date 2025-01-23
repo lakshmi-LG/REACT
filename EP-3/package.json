@@ -1,0 +1,29 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000R\u0000E\u0000A\u0000C\u0000T\u0000\r\u0000 \u0000",
+  "scripts": {
+    "test": "jest",
+    "start":"parcel EP-3/ep3.html",
+    "build":"parcel build EP-3/ep3.html"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakshmi-LG/REACT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lakshmi-LG/REACT/issues"
+  },
+  "homepage": "https://github.com/lakshmi-LG/REACT#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
