@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
+import downloadImage from './img/download.png';
+import iconImage from './img/icon.png' ;
 //1.  ---USING PURE REACT------ 
 // React.creatElement(JS obj)-----render---- HTML element(render)
 // const heading=React.createElement("h1",{id:"head"},"Namaste React from React !");
@@ -70,7 +71,55 @@ const ReactCompo=()=>(
     <>
     <FunComponent></FunComponent>
     {elem}
+    {num}
     </>
 )
 
 root.render(<ReactCompo />)
+
+
+
+//JS inside JSx using {}
+const num=1000;
+
+
+//CODING ASSIGNMENT----
+//using React.createElement
+const demo1=React.createElement("div",{id:"title"},React.createElement("h1",{},React.createElement("h2",{},React.createElement("h3",{},"from Nested h3 using createElement"))));
+
+//using JSX
+const demo2=(
+    <div id="title" className="titleJSX">
+        <h1>from h1</h1>
+        <h2>from h2</h2>
+        <h3>from h3</h3>
+    </div>
+)
+
+//using functional component
+const Demo3=()=>(
+    <div id="title">
+        <h1>from h1</h1>
+        <h2>from h2</h2>
+        <h3>from h3</h3>
+        <Title />
+    </div>
+)
+
+
+
+//creating a page ----(logo,searchbar,user icon)
+
+const Page=()=>{
+    return(
+        <div classNmae="card">
+        <header>
+        <img src={downloadImage} alt="LOGO" height="70" width="70"/>
+        <label className="input">SEARCH :<input type="text"  /> </label>
+        <img src={iconImage} height="50" width="50" className="img"/> 
+        </header>
+        </div> 
+    );
+};
+
+root.render(< Page />);  
