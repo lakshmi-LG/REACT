@@ -1,11 +1,10 @@
 {
   "name": "react",
   "version": "1.0.0",
-  "description": "\"ep-3\"",
   "scripts": {
     "test": "jest",
-    "start": "parcel EP-3/index3.html",
-    "build": "parcel build EP-3/index3.html"
+    "start": "parcel EP-4/index4.html",
+    "build": "parcel build EP-4/index4.html"
   },
   "repository": {
     "type": "git",
@@ -17,12 +16,14 @@
     "url": "https://github.com/lakshmi-LG/REACT/issues"
   },
   "homepage": "https://github.com/lakshmi-LG/REACT#readme",
+  "description": "",
   "devDependencies": {
     "parcel": "^2.13.3",
     "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.2.0"
   }
 }
