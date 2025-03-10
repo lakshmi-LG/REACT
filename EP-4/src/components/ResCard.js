@@ -16,5 +16,7 @@ const ResCard=(props)=>{
  
      )
  }
- 
+
+
+
  export default ResCard ;

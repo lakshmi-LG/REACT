@@ -14,7 +14,7 @@ useEffect(()=>{
   fetchData();
   
 },[])
-
+console.log(ListOfRes)
 const fetchData= async ()=>{
   const data=await fetch("https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9352403&lng=77.624532&collection=83639&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null")
   const json=await data.json();
@@ -55,7 +55,8 @@ return  ListOfRes.length===0?<Shimmer />: (
         
         {displayRes.length > 0 ? (
           displayRes.map((restaurant) => (
-            <Link key={restaurant.card?.card?.info?.id} to={"/restaurant/" +restaurant.card?.card?.info?.id }><ResCard  resData={restaurant} /></Link>
+            <Link key={restaurant.card?.card?.info?.id} to={"/restaurant/" +restaurant.card?.card?.info?.id }>
+              <ResCard  resData={restaurant} /></Link>
           ))
         ) : (
           <h2>No Restaurants Found</h2>
